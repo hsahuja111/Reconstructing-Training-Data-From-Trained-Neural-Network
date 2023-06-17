@@ -68,8 +68,17 @@ A pre-trained Binary MLP model was selected, which was trained using a dataset o
 
 ### Process Involved and Results
 
-In both the datasets we have initilised with the randomly initiliased images.
-   
+#### INPUT --> Parameters of Trained Model , Randomly initialised input image , parameters , lambda
+
+Firstly, we have created a Binary MLP model and loaded the weights of the trained Binary MLP Model. You can find .pth file in this repository which has parameters(weights and biases). 
+
+## CRUX
+"Now, in the traditional process we apply gradient descent and tries to find the optimal value of weights and biases which would minimise the loss function. But here we have to find the optimal value of the pixels which would minimise the 3 loss functions explained above."
+
+<img width="796" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/0155ae56-4446-459f-ad92-69e21034d70b">
+
+
+
 
 
 
