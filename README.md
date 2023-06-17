@@ -32,15 +32,28 @@ So this is the SVM equation:
 
 <img width="568" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/3269e53e-2dfb-4e57-9fc6-c64c383231bc">
 
+
 <img width="350" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/33d1d9b6-ae21-4606-9092-8753c5ce1fee">
+
 
 ![image](https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/454b7b28-fded-47a9-9b6e-780dab1c4436)
 
+So here there are two 
+
+### 3 Loss functions used
+#### 1.Parameter Loss
+<img width="369" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/6b1f1b08-f128-411f-b40a-6a9e88f25c2d">
+
+
+#### 2.Lambda Loss
+<img width="265" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/5a490fa2-bf62-4a3c-9621-ddbeabf9ce39">
+
+#### 3.Range Loss
+Say, our training data were gray scale image so the pixel range will lies from -1 to 1. So we are penalising if we our resultant images goes outside of this range.
 
 
 
 
-#### 3 Loss functions used
 
 
 
