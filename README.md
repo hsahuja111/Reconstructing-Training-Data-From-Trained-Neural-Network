@@ -1,7 +1,6 @@
 # Reconstructing-Training-Data-From-Trained-Neural-Network
 
-This repository contains implementation of a research paper - Reconstruction Training Data from Trained Neural Network.
-To understand it more deeply you can check the original paper which is present in this repository named Research-Paper.pdf.
+This repository contains implementation of a research paper - **Reconstruction Training Data from Trained Neural Network**. I have tried to explain this paper below but to go through each theoritical proof you can check the original paper which is present in this repository named Research-Paper.pdf. 
 
 Lets firstly understand the basic idea of this paper
 
@@ -50,6 +49,27 @@ So here there are two
 
 #### 3.Range Loss
 Say, our training data were gray scale image so the pixel range will lies from -1 to 1. So we are penalising if we our resultant images goes outside of this range.
+
+Suppose these Loss functions are L1,L2,L3 respectively.Total Loss will be weighted sum of L1,L2,L3.
+
+### Datasets
+
+1. TOY DATASET
+
+We have initially tried on the toy dataset. The process involved selecting 10 fully red images and 10 fully blue images to train a Binary MLP model. Subsequently, 100 randomly initialized images were obtained, and the objective now is to regenerate the original images, half of which should be red and the other half blue.
+
+<img width="236" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/94781b12-2f6c-4fc6-a55a-9fb06c2b7c5f">
+
+
+2. MNIST DATASET
+A pre-trained Binary MLP model was selected, which was trained using a dataset of 500 samples, comprising 250 samples of odd digits and the remaining 250 of even digits. The aim now is to generate these images back using a new set of 1000 samples.
+
+<img width="241" alt="image" src="https://github.com/hsahuja111/Reconstructing-Training-Data-From-Trained-Neural-Network/assets/43888676/d3c31a59-f6c0-4838-8f95-f3c44ceb075a">
+
+### Process Involved and Results
+
+In both the datasets we have initilised with the randomly initiliased images.
+   
 
 
 
